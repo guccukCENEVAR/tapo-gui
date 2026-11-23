@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+# Tapo Işık Kontrol başlatıcı
+DIR="$(cd "$(dirname "$(readlink -f "$0")")" && pwd)"
+exec "$DIR/.venv/bin/python" "$DIR/tapo_gui.py" "$@"
